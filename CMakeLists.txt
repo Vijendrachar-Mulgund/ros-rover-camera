@@ -12,6 +12,8 @@ find_package(catkin REQUIRED COMPONENTS
   rospy
   std_msgs
   sensor_msgs
+  cv_bridge
+  image_transport
   message_generation
 )
 
@@ -107,7 +109,7 @@ generate_messages(
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES rover_camera
- CATKIN_DEPENDS roscpp rospy std_msgs sensor_msgs
+ CATKIN_DEPENDS roscpp rospy std_msgs sensor_msgs cv_bridge image_transport
 #  DEPENDS system_lib
 )
 
